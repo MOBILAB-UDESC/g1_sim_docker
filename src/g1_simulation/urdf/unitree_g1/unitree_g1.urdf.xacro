@@ -17,10 +17,10 @@
   <xacro:arg name="mujoco" default="true"/>
 
   <!-- Base robot (downloaded + patched) -->
-  <xacro:include filename="$(find mujoco_ros2_control_examples)/urdf/unitree_g1/unitree_g1.urdf"/>
+  <xacro:include filename="$(find g1_simulation)/urdf/unitree_g1/unitree_g1.urdf"/>
 
   <!-- ros2_control: PD hold of the default pose -->
-  <xacro:include filename="$(find mujoco_ros2_control_examples)/urdf/unitree_g1/ros2_control.urdf.xacro"/>
+  <xacro:include filename="$(find g1_simulation)/urdf/unitree_g1/ros2_control.urdf.xacro"/>
   <xacro:unitree_g1_ros2_control mujoco="$(arg mujoco)"/>
 
   <!-- ROS optical frame for the d435 depth camera (REP-103: x-right, y-down, z-forward) -->

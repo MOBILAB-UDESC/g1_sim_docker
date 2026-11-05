@@ -10,7 +10,7 @@ walking with a choice of two RL policies.
 ## Build
 
 ```bash
-git clone git@github.com:MOBILAB-UDESC/g1_sim_docker.git
+git clone --recurse-submodules git@github.com:MOBILAB-UDESC/g1_sim_docker.git
 cd g1_sim_docker
 docker build -t g1_sim .
 ```

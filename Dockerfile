@@ -23,13 +23,11 @@ RUN pip install --break-system-packages onnxruntime numpy
 WORKDIR /workspace
 RUN mkdir -p src
 
-# --- mujoco_ros2_control itself, jazzy branch ---
-RUN git clone -b jazzy https://github.com/dfki-ric/mujoco_ros2_control src/mujoco_ros2_control
-
 # --- Your custom packages, copied in from the build context ---
 COPY src/g1_policy_runner src/g1_policy_runner
 COPY src/gr00t_wbc_runner src/gr00t_wbc_runner
 COPY src/g1_simulation src/g1_simulation
+COPY src/mujoco_ros2_control src/mujoco_ros2_control
 
 # --- Build ---
 RUN source /opt/ros/jazzy/setup.bash && \

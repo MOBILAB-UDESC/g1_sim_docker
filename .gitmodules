@@ -1,0 +1,4 @@
+[submodule "src/mujoco_ros2_control"]
+	path = src/mujoco_ros2_control
+	url = https://github.com/dfki-ric/mujoco_ros2_control
+	branch = jazzy
